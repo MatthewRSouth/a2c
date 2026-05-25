@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# project-local (not for repo)
+/plans/
+/A2C Pictures/
+/A2c.html
+/CLAUDE.md
