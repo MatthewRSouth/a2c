@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP } from "next/font/google";
+import { Noto_Sans_JP, Noto_Serif_JP, DM_Mono, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -7,7 +7,28 @@ import Footer from "./components/Footer";
 const noto = Noto_Sans_JP({
   variable: "--font-noto",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
+const notoSerif = Noto_Serif_JP({
+  variable: "--font-noto-serif",
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  display: "swap",
+});
+
+const dmMono = DM_Mono({
+  variable: "--font-dm-mono",
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  display: "swap",
+});
+
+const dmSerifDisplay = DM_Serif_Display({
+  variable: "--font-dm-serif",
+  subsets: ["latin"],
+  weight: ["400"],
   display: "swap",
 });
 
@@ -46,7 +67,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className={`${noto.variable} h-full antialiased`}>
+    <html lang="ja" className={`${noto.variable} ${notoSerif.variable} ${dmMono.variable} ${dmSerifDisplay.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-cream font-sans text-black">
         <script
           type="application/ld+json"

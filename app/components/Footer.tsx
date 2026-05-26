@@ -17,8 +17,8 @@ const services = [
 
 export default function Footer() {
   return (
-    <footer className="bg-navy text-white/70">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-12 py-16">
+    <footer className="bg-ink text-white/70">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
@@ -102,7 +102,7 @@ export default function Footer() {
 
       {/* Copyright strip */}
       <div className="border-t border-white/10">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-12 py-4 flex flex-col sm:flex-row justify-between gap-2 text-[11px] text-white/25">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex flex-col sm:flex-row justify-between gap-2 text-[11px] text-white/25">
           <span>© 2026 A2C PIPEMASTER OSAKA</span>
           <span>— NEYAGAWA, OSAKA — 地域に仲立ち、真心を込めて</span>
         </div>

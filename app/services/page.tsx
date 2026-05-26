@@ -17,7 +17,7 @@ export default function ServicesPage() {
       />
       <div className="bg-cream py-20">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-12">
-          <p className="text-sand text-sm">準備中</p>
+          <p className="text-mute text-sm">準備中</p>
         </div>
       </div>
     </>

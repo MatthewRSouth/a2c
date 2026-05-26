@@ -1,10 +1,11 @@
-type Variant = "coral" | "gold" | "blue-light" | "beige";
+type Variant = "ember" | "sun" | "sky" | "paper" | "sand";
 
 const variants: Record<Variant, { bg: string; stripe: string }> = {
-  coral: { bg: "#EF7C4A", stripe: "rgba(255,255,255,0.12)" },
-  gold: { bg: "#FFD27A", stripe: "rgba(255,255,255,0.18)" },
-  "blue-light": { bg: "#CDE0E2", stripe: "rgba(255,255,255,0.22)" },
-  beige: { bg: "#FFF6E8", stripe: "rgba(255,255,255,0.40)" },
+  ember: { bg: "#EF7C4A", stripe: "rgba(255,255,255,0.12)" },
+  sun:   { bg: "#FFD27A", stripe: "rgba(255,255,255,0.18)" },
+  sky:   { bg: "#D8E8E9", stripe: "rgba(255,255,255,0.22)" },
+  paper: { bg: "#FEF7E4", stripe: "rgba(255,255,255,0.40)" },
+  sand:  { bg: "#F3E6CF", stripe: "rgba(255,255,255,0.30)" },
 };
 
 type Props = {
@@ -14,7 +15,7 @@ type Props = {
 };
 
 export default function DiagonalStripe({
-  variant = "coral",
+  variant = "ember",
   className = "",
   label,
 }: Props) {

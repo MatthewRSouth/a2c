@@ -1,7 +1,7 @@
 import Link from "next/link";
 import DiagonalStripe from "./DiagonalStripe";
 
-type Variant = "coral" | "gold" | "blue-light" | "beige";
+type Variant = "ember" | "sun" | "sky" | "paper";
 
 type Work = {
   variant: Variant;
@@ -14,7 +14,7 @@ type Work = {
 
 const works: Work[] = [
   {
-    variant: "beige",
+    variant: "paper",
     enLabel: "Kitchen Renovation",
     date: "2025.10",
     category: "リフォーム",
@@ -22,7 +22,7 @@ const works: Work[] = [
     location: "寝屋川市・N棟",
   },
   {
-    variant: "blue-light",
+    variant: "sky",
     enLabel: "Bath Renovation",
     date: "2025.09",
     category: "リフォーム",
@@ -30,7 +30,7 @@ const works: Work[] = [
     location: "大阪市・1棟",
   },
   {
-    variant: "gold",
+    variant: "sun",
     enLabel: "Drain Maintenance",
     date: "2025.09",
     category: "メンテナンス",
@@ -38,7 +38,7 @@ const works: Work[] = [
     location: "門真市・飲食店",
   },
   {
-    variant: "coral",
+    variant: "ember",
     enLabel: "Bathroom Remodel",
     date: "2025.08",
     category: "リフォーム",
@@ -56,36 +56,36 @@ function WorkCard({ variant, enLabel, date, category, title, location }: Work) {
         label={enLabel.toUpperCase()}
       />
       <div className="flex items-center justify-between mb-1.5">
-        <span className="text-[10px] tracking-widest text-coral uppercase">
+        <span className="text-[10px] tracking-widest text-ember uppercase">
           {enLabel}
         </span>
-        <span className="text-[10px] text-sand">{date}</span>
+        <span className="text-[10px] text-mute">{date}</span>
       </div>
       <div className="mb-1">
-        <span className="text-[10px] border border-sand/40 text-sand px-2 py-0.5 rounded-full">
+        <span className="text-[10px] border border-mute/40 text-mute px-2 py-0.5 rounded-full">
           {category}
         </span>
       </div>
-      <p className="text-[14px] font-medium text-navy mt-1.5">{title}</p>
-      <p className="text-[12px] text-sand">{location}</p>
+      <p className="text-[14px] font-medium text-ink mt-1.5">{title}</p>
+      <p className="text-[12px] text-mute">{location}</p>
     </div>
   );
 }
 
 export default function WorksPreview() {
   return (
-    <section className="bg-beige py-20 lg:py-28">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-12">
+    <section className="bg-sand py-20 lg:py-28">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-end justify-between mb-10">
           <div>
-            <p className="text-[11px] tracking-[0.18em] text-sand mb-3">
+            <p className="text-[11px] tracking-[0.18em] text-ember mb-3">
               — 施工事例 —
             </p>
-            <h2 className="text-[36px] font-normal text-navy">施工事例</h2>
+            <h2 className="text-[36px] font-normal text-ink">施工事例</h2>
           </div>
           <Link
             href="/works"
-            className="text-sm text-sand hover:text-navy transition-colors tracking-wide hidden sm:block"
+            className="text-sm text-mute hover:text-ink transition-colors tracking-wide hidden sm:block"
           >
             事例をすべて見る →
           </Link>
@@ -98,7 +98,7 @@ export default function WorksPreview() {
         <div className="sm:hidden text-center">
           <Link
             href="/works"
-            className="text-sm text-sand hover:text-navy transition-colors"
+            className="text-sm text-mute hover:text-ink transition-colors"
           >
             事例をすべて見る →
           </Link>
