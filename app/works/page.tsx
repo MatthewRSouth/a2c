@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageHeader from "../components/PageHeader";
+import WorksGrid from "../components/WorksGrid";
 
 export const metadata: Metadata = {
   title: "施工事例",
@@ -15,11 +16,7 @@ export default function WorksPage() {
         title="施工事例"
         subtitle="これまでに手がけたお仕事をご紹介します"
       />
-      <div className="bg-cream py-20">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-12">
-          <p className="text-mute text-sm">準備中</p>
-        </div>
-      </div>
+      <WorksGrid />
     </>
   );
 }

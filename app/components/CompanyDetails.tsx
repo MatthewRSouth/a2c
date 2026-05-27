@@ -38,7 +38,7 @@ function TableCell({ label, value, href }: Cell) {
       <span className="text-[10px] tracking-widest text-mute uppercase shrink-0">
         {label}
       </span>
-      <span className="text-sm text-ink-soft text-right">
+      <span className="text-sm text-ink-soft text-right break-all">
         {href ? (
           <a
             href={href}
@@ -67,12 +67,14 @@ export default function CompanyDetails() {
           {rows.map((row, i) => (
             <div
               key={i}
-              className={`grid grid-cols-2 divide-x divide-ink/15 ${
+              className={`grid grid-cols-1 sm:grid-cols-2 ${
                 i % 2 === 0 ? "bg-white/60" : "bg-cream/40"
               }`}
             >
               <TableCell {...row.left} />
-              <TableCell {...row.right} />
+              <div className="border-t border-ink/15 sm:border-t-0 sm:border-l sm:border-ink/15">
+                <TableCell {...row.right} />
+              </div>
             </div>
           ))}
         </div>
