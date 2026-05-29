@@ -6,7 +6,7 @@ export default function CompanyStory() {
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <DiagonalStripe
                     variant="ember"
-                    className="w-full h-90 lg:h-110 mb-16 lg:mb-20"
+                    className="w-full h-52 sm:h-72 lg:h-110 mb-16 lg:mb-20"
                     label="COMPANY PHOTO"
                 />
 

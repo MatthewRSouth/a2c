@@ -34,11 +34,11 @@ const rows: Row[] = [
 
 function TableCell({ label, value, href }: Cell) {
   return (
-    <div className="flex items-center justify-between px-6 py-5 gap-4">
+    <div className="flex flex-col gap-0.5 sm:flex-row sm:items-center sm:justify-between px-4 sm:px-6 py-4 sm:py-5 sm:gap-4">
       <span className="text-[10px] tracking-widest text-mute uppercase shrink-0">
         {label}
       </span>
-      <span className="text-sm text-ink-soft text-right break-all">
+      <span className="text-sm text-ink-soft sm:text-right wrap-break-word">
         {href ? (
           <a
             href={href}

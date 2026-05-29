@@ -41,7 +41,7 @@ export default function Navbar() {
                     </div>
                 </Link>
 
-                <nav className="hidden md:flex items-center gap-6">
+                <nav className="hidden lg:flex items-center gap-6">
                     {navLinks.map(({ href, label, sub }) => {
                         const isActive = pathname === href;
                         return (
@@ -67,14 +67,14 @@ export default function Navbar() {
 
                 <a
                     href="tel:090-5153-4046"
-                    className="hidden md:flex items-center gap-2 bg-ember text-white text-[13px] font-medium px-4 py-2 rounded transition-colors hover:bg-ember/85 tracking-wide shrink-0"
+                    className="hidden lg:flex items-center gap-2 bg-ember text-white text-[13px] font-medium px-4 py-2 rounded transition-colors hover:bg-ember/85 tracking-wide shrink-0"
                 >
                     <Phone size={13} />
                     090-5153-4046
                 </a>
 
                 <button
-                    className="md:hidden text-ink p-1 ml-auto"
+                    className="lg:hidden text-ink p-1 ml-auto"
                     onClick={() => setOpen((v) => !v)}
                     aria-label={open ? 'メニューを閉じる' : 'メニューを開く'}
                 >
@@ -83,7 +83,7 @@ export default function Navbar() {
             </div>
 
             {open && (
-                <div className="md:hidden bg-paper border-t border-ink/10 px-6 py-5 flex flex-col gap-1">
+                <div className="lg:hidden bg-paper border-t border-ink/10 px-6 py-5 flex flex-col gap-1">
                     {navLinks.map(({ href, label }) => (
                         <Link
                             key={href}

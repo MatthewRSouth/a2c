@@ -89,7 +89,7 @@ export default function ServicesPage() {
                   {s.num} / 04 — {s.en}
                 </p>
                 <h2
-                  className="font-medium text-ink leading-tight mb-3 text-[44px] lg:text-[60px]"
+                  className="font-medium text-ink leading-tight mb-3 text-[32px] lg:text-[60px]"
                   style={{ fontFamily: "var(--font-noto-serif)" }}
                 >
                   {s.name}

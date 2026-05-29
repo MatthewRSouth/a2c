@@ -17,7 +17,7 @@ export default function PageHeader({
                 <p className="text-[11px] tracking-[0.18em] text-ember mb-4">
                     — {label} —
                 </p>
-                <h1 className="text-[40px] lg:text-[48px] font-normal text-ink leading-tight">
+                <h1 className="text-[26px] sm:text-[34px] lg:text-[48px] font-normal text-ink leading-tight">
                     {title}
                 </h1>
                 {subtitle && (
