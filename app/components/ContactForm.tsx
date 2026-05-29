@@ -35,7 +35,7 @@ function FieldLabel({
 
 export default function ContactForm() {
     const [selectedService, setSelectedService] = useState('');
-    const [state, formAction, isPending] = useActionState(sendContact, { status: 'idle' });
+    const [state, formAction, isPending] = useActionState(sendContact, { status: 'idle' as const });
 
     if (state.status === 'success') {
         return (
